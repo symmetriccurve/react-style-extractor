@@ -47,7 +47,7 @@ class App extends Component {
               //console.log(parseStyleObject)
               var eachStyle = 'container' + key + ":" + '{' +eachStyleObject +'}'
               //debugger
-              styleObject = styleObject + (styleObject.length ? "," : "") + eachStyle
+              styleObject = styleObject + (styleObject.length ? ",":"") + eachStyle
           //styleObject.push(eachStyle)
       }
 

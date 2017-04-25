@@ -60,7 +60,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.input)
     return (
       <div className="App" style={{flex:1,}}>
           <div style={{alignItems:'center',justifyContent:'center',backgroundColor:'peachpuff',flexDirection:'row'}}>

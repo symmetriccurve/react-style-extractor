@@ -1,0 +1,14 @@
+{
+    "name": "react-style-extractor",
+    "version": "0.0.1",
+    "description": "A simple library that can extract inline styles and make them seperate objects",
+    "main": "index.js",
+    "scripts": {
+        "start": "node /index.js"
+    },
+    "keywords": [
+        "style"
+    ],
+    "author": "Vikram Belde",
+    "license": "MIT"
+}

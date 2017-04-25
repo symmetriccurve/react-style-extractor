@@ -3,13 +3,15 @@
  
  # Input 
  
- <View styel={{flex:1,alignItens:"center",justiyConent:"center"}}/> 
+ <View style={{flex:1,alignItens:"center",justiyConent:"center"}}/> 
  
  # output 
  
  ## View
  
-  <View styel={container1}/> 
+    <View style={container1}/> 
+   
   
   ## Styles
-  container1 :{ flex:1,alignItens:"center",justiyConent:"center" }
+  
+  container1 :{ flex:1,alignItems:"center",justiyContent:"center" }

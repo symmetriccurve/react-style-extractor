@@ -31,12 +31,16 @@ console.log("================GENERATED OBJECTS====================")
 for (var key in matches) {
     //placeHold = placeHold.replace(/(PlaceMeBackHere)/, 'Vikram2')
     //console.log("matchIndex", matchIndex[key])
+    var eachStyleObject = matches[key].replace(/\\r\\n/g, '').replace(/[ \t]/g, '').replace(/{{/g, '{').replace(/}}/g, '}')
+    var parseStyleObject = eachStyleObject
+        //console.log(parseStyleObject)
     var eachStyle = {
-        ['container' + matchIndex[key]]: matches[key].replace(/\\r\\n/g, '').replace(/[ \t]/g, '')
-    }
+            ['container' + matchIndex[key]]: parseStyleObject
+        }
+        //console.log("eachStyle", eachStyle)
     styleObject.push(eachStyle)
 }
 
-console.log(styleObject)
+console.log("Wrap Up", styleObject)
     //console.log(match[1].replace(/\\r\\n/g, ''))
     //[\\r\\n \t]
